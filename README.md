@@ -33,6 +33,12 @@ The server should be up and running on local host port 7008
 
 ## Calling Microservice A
 ### GET Request for Quiz Questions
+TO DO: Describe purpose and how to request and receive quiz question data
+TO DO: Provide sample call code\
+TO DO: Provide UML diagram
 
 ### POST Request for Results
+TO DO: Describe purpose and how to send in quiz results and receive back the recommendation blurb\
+TO DO: Provide sample call code\
+TO DO: Provide UML diagram
 
