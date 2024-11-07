@@ -5,6 +5,21 @@ This microservice is a plant light requirement quiz! It provides a GET request p
 This microservice uses Node and Express to run locally on your device. Please read the following instructions for setup. 
 
 ## Set Up
+Note: Node must be installed on your device.
+Nodemon must all be installed to your device. If you are not sure, run the following command in your terminal:
+- _node --version_
+
+\
+If the terminal does not responde with the version number, then you will need to install Node. You can do this through the following line, that installs the nodemon package globally on your device.
+
+- _npm install -g nodemon_
+
+\
+Next, navigate to the server director within this project folder. You will need to install the express and dotenv packages because the .gitignore file has blocked node modules from being added to this repo.\
+\
+Type the following command in your terminal:
+- _npm install express dotenv_
+
 
 
 ## Running Microservice A
