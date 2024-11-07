@@ -35,9 +35,18 @@ The server should be up and running on local host port 7008
 
 
 ## Calling Microservice A
-### GET Request for Quiz Questions
-TO DO: Describe purpose and how to request and receive quiz question data\
-TO DO: Provide sample call code\
+### GET Request for Quiz Question
+By submitting a GET request to the /quiz-questions path, the client will receive a JSON object containing each of the questions and their associated answer choices.
+
+That JSON object is formatted like so:
+![quiz questions json](./quiz-questions-json.png)
+
+
+Here is a sample function that submits the GET quiz-questions request, and stores the Q&A portion of the HTTP reponse in a quizQuestions const:
+![GET quiz questions](./get-quiz-questions.png)
+
+
+
 TO DO: Provide UML diagram
 
 ### POST Request for Results
