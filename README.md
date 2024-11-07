@@ -9,3 +9,8 @@ This microservice uses Node and Express to run locally on your device. Please re
 
 ## Running Microservice A
 
+## Calling Microservice A
+### GET Request for Quiz Questions
+
+### POST Request for Results
+
