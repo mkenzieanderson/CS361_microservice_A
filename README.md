@@ -18,10 +18,10 @@ If the terminal does not responde with the version number, then you will need to
 - _npm install -g nodemon_
 
 \
-Next, navigate to the server director within this project folder. You will need to install the express and dotenv packages because the .gitignore file has blocked node modules from being added to this repo.\
+Next, navigate to the server director within this project folder. You will need to install a few node packages because the .gitignore file has blocked node modules from being added to this repo.\
 \
 Type the following command in your terminal:
-- _npm install express dotenv_
+- _npm install express dotenv cors_
 
 
 
