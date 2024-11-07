@@ -23,6 +23,13 @@ Type the following command in your terminal:
 
 
 ## Running Microservice A
+Navigate to the server directory. Run the following command in your terminal:
+- _npm run dev_
+
+\
+The server should be up and running on local host port 7008
+
+
 
 ## Calling Microservice A
 ### GET Request for Quiz Questions
