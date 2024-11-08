@@ -36,7 +36,7 @@ The server should be up and running on local host port 7008
 
 ## Calling Microservice A
 ### GET Request for Quiz Question
-By submitting a GET request to the /quiz-questions path, the client will receive a JSON object containing each of the questions and their associated answer choices.
+By submitting a GET request to the /quiz path, the client will receive a JSON object containing each of the questions and their associated answer choices.
 
 That JSON object is formatted like so:
 ![quiz questions json](./quiz-questions-json.png)

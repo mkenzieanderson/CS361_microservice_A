@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.json({mssg: 'Welcome to microservice A'});
 })
 
-app.get('/quiz-questions', (req, res) => {
+app.get('/quiz', (req, res) => {
     res.json(quizQuestions);
 });
 
