@@ -62,7 +62,7 @@ The response will be a JSON object with recommendation as the key and value is a
 - { recommendation: "Here is my recommendation for your plant ... "}
 
 
-Here is a sample async function that sends a POST request to the /quiz path, with the variable user_responses containing the array of single letter answers in the request body. The microservice reponse is stored in the variable _response_
+Here is a sample async function that sends a POST request to the /quiz path, with the variable user_responses containing the array of single letter answers in the request body. The microservice reponse is stored in the variable _response_\
 ![sample POST call](./post-quiz-responses.png)
 
 
