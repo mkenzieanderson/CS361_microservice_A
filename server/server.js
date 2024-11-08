@@ -21,6 +21,12 @@ app.get('/quiz', (req, res) => {
     res.json(quizQuestions);
 });
 
+app.post('/quiz', (req, res) => {
+    const {quizResults} = req.body;
+    console.log(quizResults);
+    res.json({recommendation: 'This is where I will return the recommendation'})
+});
+
 app.listen(process.env.PORT, () => {
     console.log('Listening on port', process.env.PORT);
 })
