@@ -50,7 +50,21 @@ Here is a sample function that submits the GET quiz-questions request, and store
 TO DO: Provide UML diagram
 
 ### POST Request for Results
-TO DO: Describe purpose and how to send in quiz results and receive back the recommendation blurb\
-TO DO: Provide sample call code\
+By submitting a POST request to the /quiz path with the quiz responses in request body, the client will receive back a JSON body containing the light recommendations that are calculated based on the quiz responses. 
+
+The request body must be formatted such that the key is quizResults and the value is an array where each element is the string, uppercase letter for each question's response. For example, if the user responded to question 1 with D, question 2 with C, question 3 with B, and question 4 with A, then the request JSON should like so do:
+- { quizResults: ['D', 'C', 'B', 'A'] }
+
+
+Please note that only uppercase letters will be accepted, and that the order in the array must match the order that the questions are given in the quiz. 
+
+The response will be a JSON object with recommendation as the key and value is a string containing the recommendation blurb. Here's how it will look:
+- { recommendation: "Here is my recommendation for your plant ... "}
+
+
+Here is a sample async function that sends a POST request to the /quiz path, with the variable user_responses containing the array of single letter answers in the request body. The microservice reponse is stored in the variable _response_
+![sample POST call](./post-quiz-responses.png)
+
+
 TO DO: Provide UML diagram
 
