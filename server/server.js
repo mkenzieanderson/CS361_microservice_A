@@ -6,6 +6,8 @@ const cors = require('cors');
 
 const app = express();
 
+const GenerateRecommendation = require('./quiz_modules/GenerateRecommendation');
+
 app.use(express.json());
 app.use(cors());
 app.use((req, res, next) => {
@@ -23,8 +25,8 @@ app.get('/quiz', (req, res) => {
 
 app.post('/quiz', (req, res) => {
     const {quizResults} = req.body;
-    console.log(quizResults);
-    res.json({recommendation: 'This is where I will return the recommendation'})
+    const light_recommendation = GenerateRecommendation(quizResults);
+    res.json({recommendation: light_recommendation})
 });
 
 app.listen(process.env.PORT, () => {

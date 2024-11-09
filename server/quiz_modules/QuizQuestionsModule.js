@@ -30,7 +30,7 @@ const quizQuestions = {
         }
     },
     "Q4": {
-        "Question": "Do you use a UV lamp near your plant?",
+        "Question": "Do you use a Grow light near your plant?",
         "Choices": {
             "A": "Yes",
             "B": "No"
