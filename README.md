@@ -46,9 +46,6 @@ Here is a sample function that submits the GET quiz-questions request, and store
 ![GET quiz questions](./get-quiz-questions.png)
 
 
-
-TO DO: Provide UML diagram
-
 ### POST Request for Results
 By submitting a POST request to the /quiz path with the quiz responses in request body, the client will receive back a JSON body containing the light recommendations that are calculated based on the quiz responses. 
 
@@ -66,5 +63,6 @@ Here is a sample async function that sends a POST request to the /quiz path, wit
 ![sample POST call](./post-quiz-responses.png)
 
 
+### UML Diagram
 TO DO: Provide UML diagram
 
