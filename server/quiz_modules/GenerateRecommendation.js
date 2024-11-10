@@ -93,30 +93,25 @@ function growLightScore(response) {
 };
 
 function GenerateRecommendation(responses) {
+    if (responses.length !== 4) {
+        return "Error"
+    }
     const min_max_range = determineMinMax(responses[0]);
     if (min_max_range === "Error") {
-        console.log("ERROR");
-        return;
-        // ADD ERROR RESPONSE HERE
+        return "Error"
     }
     let light_sum = 0;
     const window_score = windowScore(responses[1]);
     if (window_score === "Error") {
-        console.log("ERROR");
-        return;
-        // ADD ERROR RESPONSE HERE
+        return "Error"
     }
     const daylight_score = daylightScore(responses[2]);
     if (daylight_score === "Error") {
-        console.log("ERROR");
-        return;
-        // ADD ERROR RESPONSE HERE
+        return "Error"
     }
     const grow_light_score = growLightScore(responses[3]);
     if (daylight_score === "Error") {
-        console.log("ERROR");
-        return;
-        // ADD ERROR RESPONSE HERE
+        return "Error"
     }
     light_sum += (window_score + daylight_score + grow_light_score);
     if (light_sum < min_max_range[0]) {

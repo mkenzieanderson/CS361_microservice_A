@@ -24,9 +24,17 @@ app.get('/quiz', (req, res) => {
 });
 
 app.post('/quiz', (req, res) => {
-    const {quizResults} = req.body;
-    const light_recommendation = GenerateRecommendation(quizResults);
-    res.json({recommendation: light_recommendation})
+    try {
+        const {quizResults} = req.body;
+        const light_recommendation = GenerateRecommendation(quizResults);
+        if (light_recommendation === "Error") {
+            return res.status(400).json({ error: "Invalid request: quizResults must be an array of exactly four Uppercase, single-letter answers that match one of the options available for each question" });
+        }
+        res.json({ recommendation: light_recommendation });
+    } catch (error) {
+        console.error("Error processing quiz results:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
 });
 
 app.listen(process.env.PORT, () => {
