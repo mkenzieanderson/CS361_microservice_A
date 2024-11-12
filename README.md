@@ -64,5 +64,5 @@ Here is a sample async function that sends a POST request to the /quiz path, wit
 
 
 ### UML Diagram
-TO DO: Provide UML diagram
+![UML Diagram](./UML-diagram.png)
 
