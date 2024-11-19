@@ -38,4 +38,4 @@ const quizQuestions = {
     }
 };
 
-module.exports = GenerateRecommendation;
+module.exports = quizQuestions;
