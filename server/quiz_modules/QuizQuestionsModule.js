@@ -38,4 +38,4 @@ const quizQuestions = {
     }
 };
 
-export default quizQuestions;
+module.exports = quizQuestions;
